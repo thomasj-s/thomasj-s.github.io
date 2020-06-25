@@ -36,10 +36,10 @@ from scipy.stats import ttest_ind
 ttest_ind(teams_final2['2019 pitcher ratings'], teams_final2['Playoffs'])
 ~~~
 This test returns two numbers, the most telling being our 'pvalue', which confirms that there is indeed a correlation between average Game Score and making the playoffs.
-
+~~~
 Ttest_indResult(statistic=113.26504811455703, pvalue=9.211662137550928e-70)
-  
-  <code snippet of ttest>
+~~~
+
 
 
 
