@@ -5,5 +5,5 @@ subtitle: A closer look at the relevance of an aging metric
 gh-repo: thomasj-s.github/io
 ---
 
-![plot 2](C:\Users\chris\Downloads\build-project-1-vis-2(2).png)
+![plot 2](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_1_vis_2%20(2).png)
 
