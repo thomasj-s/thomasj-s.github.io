@@ -19,7 +19,7 @@ gh-repo: thomasj-s.github/io
   
   Each dot on the chart below represents the intersect of a teams 2019 Average Game Score rating, and the win percentage the team finished the season with.  A red dot indicates that the team made the playoffs, and a grey dot indicates did not make playoffs.
 
-![plot 1](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_1_vis_1.jpg)
+![plot 1](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_1_vis_1.jpg?raw=true)
 
   My first takeaway is a definite positive relation between average Game Score rating, and average win percentage.  Not shocking.  
   
