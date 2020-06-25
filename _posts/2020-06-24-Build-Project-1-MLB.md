@@ -29,6 +29,9 @@ gh-repo: thomasj-s.github/io
   
   Our graph clearly indicates something unseen before:  no team with an average Game Score of 50 or less finished with above a 50% win rate or made the playoffs.  The only exception to this trend is the Oakland A's, whose average Game Score of 49.8 still made the playoffs.
   
+  
+## Game Score impact on playoff series.
+
   Since there may be a relationship beween average Game Score and playoff appearance, I decided to run a "ttest", which would look for a mathematical relationship between the two.
   
 ~~~
@@ -39,6 +42,31 @@ This test returns two numbers, the most telling being our 'pvalue', which confir
 ~~~
 Ttest_indResult(statistic=113.26504811455703, pvalue=9.211662137550928e-70)
 ~~~
+
+  After spending a while with my boiled-down playoff data, an insight that I did not expect came to light: of the nine series played in the 2019 MLB post-season, 8 were won by the team with a higher Game Score rating.
+  
+  ![plot 3](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build-project-1-vis-3%20(10).jpg?raw=true)
+  
+## Conclusion 
+  
+  1.  There was a positive relationship between average Game Score and average win percentage for the 2019 season.
+  
+  2.  No team with an average Game Score rating of below 50 won more than 50% of their games or made the playoffs.....beside the Oakland A's who finished out the year with a 
+      49.8 average Game Score yet managed to make the playoffs.
+  
+  3.  There was a statistical correlation between average Game Score and making the playoffs.  
+  
+  4.  8 of 9 playoff series were won by the team with the higher average Game Score
+  
+  5   Our two world series teams for 2019 were the teas with the two highest average Game Score ratings in the MLB.
+  
+  Is Game Score still a relevant metric? I say yes.  Granted we only looked at one season of play, I would say we found some arguments to be had for the relevance of an ancient MLB metric.
+  
+  
+  
+  [Here](https://colab.research.google.com/drive/1Y9GQezf47T5TooBPUK6qjhGvzUHaGpW7?usp=sharing) is a link to the notebook where all of the work was done to produce this post.
+  
+
 
 
 
