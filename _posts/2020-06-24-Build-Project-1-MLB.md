@@ -23,9 +23,15 @@ gh-repo: thomasj-s.github/io
 
   My first takeaway is a definite positive relation between average Game Score rating, and average win percentage.  Not shocking.  
   
-  My second takeaway, is that there is not an apparent relationship between average Game Score rating, and whether or not a team made the playoffs.  The playoff teams range from below average to very high in average Game Score rating, and there are many teams who did not make the playoffs that had high Game Score ratings.
+  If we apply some clustering techniques to the same data though, we get some interesting insights;
   
-  Since I was not convinced fully that there was not a correlation between Game Score rating and making the playoffs I decided to go one step further.  I ran a "ttest" which 
+  ![plot 2](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_1_vis_2.jpg)
+  
+  This clearly indicates something unseen before; No team with an average Game Score of 50 or less finished with above a 50% win rate, or made the playoffs.  The only exception to this is the Oakland A's, who had an average Game Score of 49.8 and made the playoffs.
+  
+  Since there
+  
+  <code snippet of ttest>
 
-![plot 2](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_1_vis_2.jpg)
+
 
