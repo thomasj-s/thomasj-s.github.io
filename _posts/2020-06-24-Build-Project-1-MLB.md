@@ -29,7 +29,12 @@ gh-repo: thomasj-s.github/io
   
   This clearly indicates something unseen before; No team with an average Game Score of 50 or less finished with above a 50% win rate, or made the playoffs.  The only exception to this is the Oakland A's, who had an average Game Score of 49.8 and made the playoffs.
   
-  Since there
+  Since there may be a relationship beween average Game Score and playoff appearance, I decided to run a "ttest", which would look for a mathematical relationship between the two.
+  
+~~~
+from scipy.stats import ttest_ind
+ttest_ind(teams_final2['2019 pitcher ratings'], teams_final2['Playoffs'])
+~~~
   
   <code snippet of ttest>
 
