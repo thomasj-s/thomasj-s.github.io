@@ -56,9 +56,9 @@ Ttest_indResult(statistic=113.26504811455703, pvalue=9.211662137550928e-70)
   
   3.  There was a statistical correlation between average Game Score and making the playoffs.  
   
-  4.  8 of 9 playoff series were won by the team with the higher average Game Score
+  4.  8 of 9 playoff series were won by the team with the higher average Game Score.
   
-  5   Our two world series teams for 2019 were the teas with the two highest average Game Score ratings in the MLB.
+  5.  Our two world series teams for 2019 were the teas with the two highest average Game Score ratings in the MLB.
   
   Is Game Score still a relevant metric? I say yes.  Granted we only looked at one season of play, I would say we found some arguments to be had for the relevance of an ancient MLB metric.
   
