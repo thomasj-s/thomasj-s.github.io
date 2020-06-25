@@ -25,7 +25,7 @@ gh-repo: thomasj-s.github/io
   
   If we apply some clustering techniques to the same data though, we get some interesting insights;
   
-  ![plot 2](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_1_vis_2.jpg)
+  ![plot 2](_posts/build_project_1_vis_2.jpg)
   
   This clearly indicates something unseen before; No team with an average Game Score of 50 or less finished with above a 50% win rate, or made the playoffs.  The only exception to this is the Oakland A's, who had an average Game Score of 49.8 and made the playoffs.
   
