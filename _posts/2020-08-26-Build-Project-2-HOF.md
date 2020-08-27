@@ -25,4 +25,6 @@ gh-repo: thomasj-s.github/io
   
   Below is a confusion matrix for our first models predicions on our validation set.  
   ![plot 1](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_2_vis_1.jpg?raw=true)
+  
+  
   From this we can derive a validation precision of 85.7%, recall of 75% and an F-1 score of 80%. Considering that these are out of the box methods, these would be pretty good numbers; Though it still does not beat the 95% precision that our minority class baseline sets.
