@@ -36,7 +36,7 @@ gh-repo: thomasj-s.github/io
   Our first step is to tune our random forest hyperamaters using GridsearchCV.  Done.
   Our next step is to use SMOTE to sythesize more samples of our minority class to train our model on.  This should theoretically help the model dicsern between classes easier.  We create enough samples to balance th distribution between classes.
   
-  ~~~
-  oversample = SMOTE(sampling_strategy=1, k_neighbors=1, random_state=42)
+~~~
+oversample = SMOTE(sampling_strategy=1, k_neighbors=1, random_state=42)
 xtrain_res, ytrain_res = oversample.fit_resample(xtrain_transformed, ytrain)
 ~~~
