@@ -28,3 +28,15 @@ gh-repo: thomasj-s.github/io
   
   
   From this we can derive a validation precision of 85.7%, recall of 75% and an F-1 score of 80%. Considering that these are out of the box methods, these would be pretty good numbers; Though it still does not beat the 95% precision that our minority class baseline sets.
+  
+## Tuning
+
+  Now that we have a goal to beat, lets tune our model.
+  
+  Our first step is to tune our random forest hyperamaters using GridsearchCV.  Done.
+  Our next step is to use SMOTE to sythesize more samples of our minority class to train our model on.  This should theoretically help the model dicsern between classes easier.  We create enough samples to balance th distribution between classes.
+  
+  ~~~
+  oversample = SMOTE(sampling_strategy=1, k_neighbors=1, random_state=42)
+xtrain_res, ytrain_res = oversample.fit_resample(xtrain_transformed, ytrain)
+~~~
