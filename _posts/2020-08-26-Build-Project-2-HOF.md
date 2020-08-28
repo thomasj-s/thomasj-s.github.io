@@ -33,8 +33,7 @@ gh-repo: thomasj-s.github/io
 
   Now that we have a goal to beat, lets tune our model.
   
-  Our first step is to tune our random forest hyperamaters using GridsearchCV.  Done.
-  Our next step is to use SMOTE to sythesize more samples of our minority class to train our model on.  This should theoretically help the model dicsern between classes easier. 
+  Our first step is to use SMOTE to sythesize more samples of our minority class to train our model on.  This should theoretically help the model dicsern between classes easier.  Our next step is to tune our random forest hyperamaters using GridsearchCV.  Done.
   
 ~~~
 oversample = SMOTE(sampling_strategy=.5, k_neighbors=2, random_state=42)
