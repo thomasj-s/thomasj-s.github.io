@@ -52,6 +52,11 @@ xtrain_res, ytrain_res = oversample.fit_resample(xtrain_transformed, ytrain)
 
   The ROC plot below indicates that our first model does an overall better job of distinguising between classes.  This is confirmed by the respective AUC scores of 87.1, and 86.8.
   
-![plot 3](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_2_vis_4.jpg?raw=true)
+  ![plot 3](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_2_vis_4.jpg?raw=true)
   
+  Since our hyperparameter tuning and SMOTE'd data seem to have been in vain, we decide to move forward toward the moment of truth : our hold-out test data.
+  
+## The Test
+
+  When we apply each of our models to the hold-out test data, we get some shocking results considering our validation scores.
   
