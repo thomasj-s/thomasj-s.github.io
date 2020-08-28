@@ -48,4 +48,10 @@ xtrain_res, ytrain_res = oversample.fit_resample(xtrain_transformed, ytrain)
   
   Not exactly.  Our metrics for the validation test on our second model were as follows: Precision of 75%, recall of 75%, and F-1 of 75%.  Our second model actually performs worse than our out of the box model.  We turn to some comparison plots to see exactly what is going on.  
   
+## Comparison
+
+  The ROC plot below indicates that our first model does an overall better job of distinguising between classes.  This is confirmed by the respective AUC scores of 87.1, and 86.8.
+  
+![plot 3](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_2_vis_4.jpg?raw=true)
+  
   
