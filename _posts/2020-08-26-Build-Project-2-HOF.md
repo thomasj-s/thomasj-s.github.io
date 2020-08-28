@@ -47,4 +47,6 @@ xtrain_res, ytrain_res = oversample.fit_resample(xtrain_transformed, ytrain)
 
   At this point, you may be sharing some of the thoughts I had at this point in the process : "All right!  With some more samples and tuned parameters we're definitely going to see an increase in our metrics!"  
   
-  Not exactly.  Our metrics for the validation test on our second model were as follows: Precision of 75%, recall of 75%, and F-1 of 75%.  Our second model actually performs worse than our out of the box model.  
+  Not exactly.  Our metrics for the validation test on our second model were as follows: Precision of 75%, recall of 75%, and F-1 of 75%.  Our second model actually performs worse than our out of the box model.  We turn to some comparison plots to see exactly what is going on.  
+  
+  
