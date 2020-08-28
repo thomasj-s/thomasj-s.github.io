@@ -34,9 +34,17 @@ gh-repo: thomasj-s.github/io
   Now that we have a goal to beat, lets tune our model.
   
   Our first step is to tune our random forest hyperamaters using GridsearchCV.  Done.
-  Our next step is to use SMOTE to sythesize more samples of our minority class to train our model on.  This should theoretically help the model dicsern between classes easier.  We create enough samples to balance th distribution between classes.
+  Our next step is to use SMOTE to sythesize more samples of our minority class to train our model on.  This should theoretically help the model dicsern between classes easier. 
   
 ~~~
-oversample = SMOTE(sampling_strategy=1, k_neighbors=1, random_state=42)
+oversample = SMOTE(sampling_strategy=.5, k_neighbors=2, random_state=42)
 xtrain_res, ytrain_res = oversample.fit_resample(xtrain_transformed, ytrain)
 ~~~
+
+  We can take a look at the distribution plot below to get an idea of what SMOTE is doing to our data.
+  
+  ![plot 2](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_2_vis_3%20(1).jpg?raw=true)
+
+  At this point, you may be sharing some of the thoughts I had at this point in the process : "All right!  With some more samples and tuned parameters we're definitely going to see an increase in our metrics!"  
+  
+  Not exactly.  Our metrics for the validation test on our second model were as follows: Precision of 75%, recall of 75%, and F-1 of 75%.  Our second model actually performs worse than our out of the box model.  
