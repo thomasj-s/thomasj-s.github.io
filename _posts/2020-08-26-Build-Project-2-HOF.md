@@ -50,7 +50,7 @@ xtrain_res, ytrain_res = oversample.fit_resample(xtrain_transformed, ytrain)
   
 ## Comparison
 
-  The ROC plot below indicates that our first model does an overall better job of distinguising between classes.  This is confirmed by the respective AUC scores of 87.1, and 86.8.
+  The ROC plot below indicates that our first model does an overall better job of distinguising between classes.  This is confirmed by the respective AUC scores of 97.3, and 92.2.
   
   ![plot 3](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_2_vis_4.jpg?raw=true)
   
@@ -68,10 +68,10 @@ xtrain_res, ytrain_res = oversample.fit_resample(xtrain_transformed, ytrain)
   The first plot is the precision-recall curve for our first model, and below that is our second model.
   
   ![plot 4](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_2_vis_6.jpg?raw=true)
-  ![plot 5](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_2_vis_5%20(1).jpg?raw=true)
+  ![plot 5](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_2_vis_5%20(2).jpg?raw=true)
   
   
-  From this, it appears that our second model retains a higher precision through the middle threshold areas, where a random forest classifier is set by default (.5).  This might explain why our second model perfomed better on the test set.
+  From this, it appears that our second model retains a higher precision through the middle threshold areas, where a random forest classifier is set by default (.5).  This might explain why our second model perfomed better on the test set.  The AUC scores could also indicate that our first model waas overfit on the train data because of the max depth on our forest was not specified.
   
 ## Conclusion
 
