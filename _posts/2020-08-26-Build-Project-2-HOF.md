@@ -60,3 +60,16 @@ xtrain_res, ytrain_res = oversample.fit_resample(xtrain_transformed, ytrain)
 
   When we apply each of our models to the hold-out test data, we get some shocking results considering our validation scores.
   
+  Our first model, with the higher AUC score brings in a 33% precision, 33% recall, and 33% F-1.  Much lower than we were hoping for.
+  
+  Our second model suprisingly brings in better metrics, at 50% precision, 66% recall, and 57% F-1.  Still much lower than we were hoping for.
+  
+  I decided to turn to some precision-recall plots in hopes of achieving a better understanding of why our 'worse' model performed better.
+  The first plot is the precision-recall curve for our first model, and below that is our second model.
+  
+  ![plot 4](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_2_vis_6.jpg?raw=true)
+  ![plot 5](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_2_vis_5%20(1).jpg?raw=true)
+  
+  
+  From this, it appears that our second model retains a higher precision through the middle threshold areas, where a random forest classifier is set by default (.5)
+  
