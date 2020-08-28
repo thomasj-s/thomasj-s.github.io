@@ -71,5 +71,11 @@ xtrain_res, ytrain_res = oversample.fit_resample(xtrain_transformed, ytrain)
   ![plot 5](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_2_vis_5%20(1).jpg?raw=true)
   
   
-  From this, it appears that our second model retains a higher precision through the middle threshold areas, where a random forest classifier is set by default (.5)
+  From this, it appears that our second model retains a higher precision through the middle threshold areas, where a random forest classifier is set by default (.5).  This might explain why our second model perfomed better on the test set.
+  
+## Conclusion
+
+  In conclusion, this turned out to be a much harder task than I had anticipated.  From the data cleaning, to the target distribution, to the small validation and test sets I had to work with.  
+  
+  Maybe we needed different features, maybe we needed a different model.  The only thing for certain, is that predicting whether or not a Hall of Fame inductee will make it in on their first ballot, on stats alone, was a far more daunting task than I had anticipated.
   
