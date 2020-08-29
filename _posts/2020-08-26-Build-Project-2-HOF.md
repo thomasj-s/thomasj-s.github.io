@@ -79,3 +79,5 @@ xtrain_res, ytrain_res = oversample.fit_resample(xtrain_transformed, ytrain)
   
   Maybe we needed different features, maybe we needed a different model.  The only thing for certain, is that predicting whether or not a Hall of Fame inductee will make it in on their first ballot, on stats alone, was a far more daunting task than I had anticipated.
   
+  [Here](https://github.com/thomasj-s/Unit_2_Build_HOf) is a link to the notebook where all of the work was done to produce this post.
+  
