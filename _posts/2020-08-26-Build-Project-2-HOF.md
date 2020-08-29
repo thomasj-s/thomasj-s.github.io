@@ -21,13 +21,13 @@ gh-repo: thomasj-s.github/io
   
 ## Modeling
   
-  Since our problem is a binary classification problem that might include some non-monotonic relationships, we will be using iterations of a random forest model.  Our first model will be an 'out of the box' model, and our second model will include SMOTE'd data and hyperameter tunings.  We want to compare these two models and see which will hace a higher precision in predicting our minority class.
+  Since our problem is a binary classification problem that might include some non-monotonic relationships, we will be using iterations of a random forest model.  Our first model will be an 'out of the box' model, and our second model will include SMOTE'd data and hyperameter tunings.  We want to compare these two models and see which will have a higher precision in predicting our minority class.
   
   Below is a confusion matrix for our first models predicions on our validation set.  
   ![plot 1](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_2_vis_1.jpg?raw=true)
   
   
-  From this we can derive a validation precision of 85.7%, recall of 75% and an F-1 score of 80%. Considering that these are out of the box methods, these would be pretty good numbers; Though it still does not beat the 95% precision that our minority class baseline sets.
+  From this we can derive a validation precision of 85.7%, recall of 75% and an F-1 score of 80%. Considering that these are out of the box methods, these would be pretty good numbers; Though it still does not beat the 95% precision that our majority class baseline sets.
   
 ## Tuning
 
@@ -71,7 +71,7 @@ xtrain_res, ytrain_res = oversample.fit_resample(xtrain_transformed, ytrain)
   ![plot 5](https://github.com/thomasj-s/thomasj-s.github.io/blob/master/_posts/build_project_2_vis_5%20(2).jpg?raw=true)
   
   
-  From this, it appears that our second model retains a higher precision through the middle threshold areas, where a random forest classifier is set by default (.5).  This might explain why our second model perfomed better on the test set.  The AUC scores could also indicate that our first model waas overfit on the train data because of the max depth on our forest was not specified.
+  From this, it appears that our second model retains a higher precision through the middle threshold areas, where a random forest classifier is set by default (.5).  This might explain why our second model perfomed better on the test set.  The AUC scores could also indicate that our first model waas overfit on the train data because the max depth on our forest was not specified.
   
 ## Conclusion
 
